@@ -1,0 +1,47 @@
+{
+"users":[
+    {
+        "id":"1",
+        "name":"Kirthi",
+        "surname":"Sai",
+        "email":"users@gmail.com",
+        "issuedBook":"1",
+        "issuedDate":"04/01/2024",
+        "returnDate":"05/01/2024",
+        "subscriptionType":"Premium",
+        "subscriptionDate":"04/01/2024"
+    },
+    {
+        "id":"2",
+        "name":"Venkat",
+        "surname":"Raghav",
+        "email":"users@gmail.com",
+        "issuedBook":"2",
+        "issuedDate":"10/01/2024",
+        "returnDate":"15/01/2024",
+        "subscriptionType":"Basic",
+        "subscriptionDate":"03/01/2024"
+     },
+     {
+        "id":"3",
+        "name":"Naren",
+        "surname":"REC",
+        "email":"users@gmail.com",
+        "issuedBook":"3",
+        "issuedDate":"12/01/2024",
+        "returnDate":"16/01/2024",
+        "subscriptionType":"Basic",
+        "subscriptionDate":"03/01/2024"
+     },
+     {
+        "id":"4",
+        "name":"Sujail",
+        "surname":"Shetty",
+        "email":"users@gmail.com",
+        "subscriptionType":"Premium",
+        "subscriptionDate":"05/01/2024"
+     }
+     
+]
+
+}

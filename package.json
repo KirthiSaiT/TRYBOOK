@@ -4,13 +4,13 @@
   "description": "BACKEND FOR LIBRARY MANAGEMENT",
   "main": "index.js",
   "scripts": {
-    "start":"node index.js",
-    "dev":"nodemon index.js"
-
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.19.2",
     "install": "^0.13.0"
   },
   "devDependencies": {
