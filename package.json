@@ -1,0 +1,19 @@
+{
+  "name": "trybook",
+  "version": "1.0.0",
+  "description": "BACKEND FOR LIBRARY MANAGEMENT",
+  "main": "index.js",
+  "scripts": {
+    "start":"node index.js",
+    "dev":"nodemon index.js"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "install": "^0.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
