@@ -67,7 +67,45 @@ app.post("/users",(req,res)=>{
     });
 })
 
+app.put("/users/:id",(req,res)=>{
+    const {id}=req.params;
+    const{data}=req.body;
+    const user = users.find((each)=>each.id===id);
 
+    if (!user) {
+        return res.status(404).json({
+            success: false,
+            message: "User Doesn't Exist!!"
+        });
+    }
+    const updateDate = users.map((each)=>{
+        if(each.id===id){
+            return {
+                ...each,
+                ...data,
+
+            };
+        }
+        return each;
+    });
+    return res.status(200).json({
+        success: true,
+        message: "User Updated!!",
+        data:updateDate,
+    });
+})
+
+
+app.delete("/users/:id",(req,res)=>{
+    const {id}=req.params;
+    const user = users.find((each)=>each.id===id);
+    if (!user) {
+        return res.status(404).json({
+            success: false,
+            message: "User Doesn't Exist!!"
+            });
+        }
+})
 
 
 
