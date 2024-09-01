@@ -1,0 +1,23 @@
+{
+    "books": [
+        {
+            "id": "1",
+            "title": "Example Book",
+            "author": "Author Name",
+            "issuedBook":"3"
+        },
+        {
+            "id": "2",
+            "title": "Another Book",
+            "author": "Another Author",
+            "issuedBook":"3"
+
+        },
+        {
+            "id": "3",
+            "title": "Third Book",
+            "author": "Third Author",
+            "issuedBook":"3"
+        }
+    ]
+}
