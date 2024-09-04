@@ -1,6 +1,7 @@
 const express=require("express");
 const { users } = require('../data/users.json'); 
 const router=express.Router();
+
 router.get("/users",(req,res)=>{
     res.status(200).json({
         success:true,

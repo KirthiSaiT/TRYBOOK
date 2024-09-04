@@ -3,6 +3,7 @@ const { books } = require("../data/books.json");
 const router = express.Router();
 const { users } = require("../data/users.json"); 
 
+
 router.get('/', (req, res) => {
     res.status(200).json({
         success: true,
@@ -81,7 +82,7 @@ router.put("/updateBook/:id", (req, res) => {
     const { id } = req.params;
     const { data } = req.body;
 
-    // Find the index of the book to update
+ 
     const bookIndex = books.findIndex((each) => each.id === id);
 
     if (bookIndex === -1) {
@@ -91,7 +92,7 @@ router.put("/updateBook/:id", (req, res) => {
         });
     }
 
-    // Update the book data
+    
     books[bookIndex] = { ...books[bookIndex], ...data };
 
     return res.status(200).json({
@@ -108,7 +109,7 @@ router.get('/subscription-details/:id', (req, res) => {
     if (!user) {
         return res.status(404).json({
             message: false,
-            error: "User with ID does not exist" // Changed "message" to "error" for clarity
+            error: "User with ID does not exist" 
         });
     }
 
@@ -126,13 +127,13 @@ router.get('/subscription-details/:id', (req, res) => {
         let endDate = new Date(startDate);
 
         if (subscriptionType === 'Basic') {
-            endDate.setDate(endDate.getDate() + 30); // Assuming Basic subscription is 30 days
+            endDate.setDate(endDate.getDate() + 30); 
         } else if (subscriptionType === 'Standard') {
-            endDate.setDate(endDate.getDate() + 60); // Assuming Standard subscription is 60 days
+            endDate.setDate(endDate.getDate() + 60); 
         } else if (subscriptionType === 'Premium') {
-            endDate.setDate(endDate.getDate() + 90); // Assuming Premium subscription is 90 days
+            endDate.setDate(endDate.getDate() + 90); 
         } else {
-            return null; // If subscriptionType is not recognized
+            return null; 
         }
 
         return endDate;

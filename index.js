@@ -1,9 +1,8 @@
 const express = require('express');
-
 const app = express();
 const userRouter = require('./routes/users');
 const booksRouter = require('./routes/books');
-const port = 3000;
+const port = 4000;
 
 app.use(express.json());
 
@@ -14,6 +13,7 @@ app.get('/', (req, res) => {
         data: "hey",
     });
 });
+
 
 app.use("/users", userRouter);
 app.use("/books", booksRouter); 
