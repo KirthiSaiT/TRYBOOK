@@ -78,6 +78,15 @@ router.post("/",(req,res)=>{
         data:allBooks,
     })
 });
+
+
+
+
+
+
+
+
+
 router.put("/updateBook/:id", (req, res) => {
     const { id } = req.params;
     const { data } = req.body;
